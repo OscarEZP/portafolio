@@ -18,8 +18,21 @@ $(document).ready(function($) {
 //launch it.
         if($(this).attr('value') == 'gam'){
             alertify
-                .errorAlert("<p>Desarrollo de una aplicación para El Centro cultural de las artes, la cultura y las personas. Esta aplicación esta compuesta por distitnos modulos los cuales son: Eventos, Mapas, Publicidad y su respectivo panel de administraciòn para la gestón de los eventos y el control de los tiempos de cada cartelera.</p>" +
-                    "<p>Para el desarrollo de esta aplicación se usarón las siguientes herramientas: PHP, Jquery y Bootstrap. Para el desarrollo de la parte interactiva se usó Node.JS con la librería Socket.IO </p>");
+                .errorAlert("<p>Desarrollo de una aplicación para <b>El Centro cultural de las artes, la cultura y las personas</b>. Esta aplicación esta compuesta por distitnos modulos los cuales son: Eventos, Mapas, Publicidad y su respectivo panel de administraciòn para la gestón de los eventos y el control de los tiempos de cada cartelera.</p>" +
+                    "<p>Para el desarrollo de esta aplicación se usarón las siguientes herramientas: PHP, Jquery y Bootstrap. Para el desarrollo de la parte interactiva se usó Node.JS con la librería Socket.IO </p>" +
+                    "");
+
+        }else  if($(this).attr('value') == 'purepecha'){
+            alertify
+                .errorAlert("<p>Para el desarrollo de esta pagina web el cliente solicitó solo un sistema de reservaciones para clientes y pago con PayPal.</p>" +
+                    "<p>El cliente suministró el template y las imágenes. Las tareas para el desarrollo de esta página web fué implementar el backend el cual fue en Laravel 5.4 y la administración de un servidor compartido.</p>" +
+                    "");
+
+        }else  if($(this).attr('value') == 'pollito'){
+            alertify
+                .errorAlert("<p>Desarrollo de un E-commerce para la venta de productos de bebés.</p>" +
+                    "<p>Para el desarrollo de esta aplicación fui el encargado del desarrollo del backend el cual está implementado en Python - Django y Django Rest-framework. Se usó SCRUM como metodología ágil para el desarrollo</p>" +
+                    "");
 
         }
     });
